@@ -1,8 +1,7 @@
 #!/bin/bash
 echo "linking dotfiles to home directory"
 
-FILES="autotest
-gemrc
+FILES="gemrc
 gitconfig
 irbrc
 my.cnf
