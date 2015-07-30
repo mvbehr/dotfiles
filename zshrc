@@ -5,7 +5,9 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -41,7 +43,7 @@ alias gitlog='git log --graph --pretty=format:"%Cgreen%h%Creset - %Cblue(%ci) -%
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ruby gem history brew colorize colored-man capistrano git gitfast postgres pow rails rsync rbenv sublime themes pass zsh-syntax-highlighting history-substring-search bundler)
+plugins=(osx ruby gem history brew colorize colored-man capistrano git gitfast postgres pow rails rsync rbenv sublime themes pass zsh-syntax-highlighting history-substring-search bundler)
 # vi-mode zeus vagrant node npm  git-extras github)
 
 #####################
@@ -53,15 +55,15 @@ export CLICOLOR=1;
 # export CURL_CA_BUNDLE=/usr/local/Cellar/curl-ca-bundle/1.87/share/ca-bundle.crt
 export CURL_CA_BUNDLE=/usr/local/Cellar/curl-ca-bundle/1.87/share/cacert.pem
 
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
+# export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/
 export CPPFLAGS=-I/opt/X11/include
 
-export EDITOR='subl -w'
+export EDITOR='s'
 
 export SHELL=/bin/bash
 
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 
 # Finished adapting your PATH environment variable for use with MacPorts.
 export MANPATH=/opt/local/share/man:$MANPATH
@@ -89,6 +91,8 @@ alias s="subl"
 alias s.="s ."
 alias ars="sudo /usr/sbin/httpd -k restart"
 alias prs="touch tmp/restart.txt"
+alias door='echo b178cb7f37f70e1c2cf9dd3a53c7|nc 192.168.23.187 9999'
+alias ssh_jen='ssh mb@46.237.200.174 -p56214 -NL8080:localhost:80'
 
 alias reload=". ~/.zshrc"
 
@@ -201,6 +205,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Customize to your needs...
 export PATH=$PATH:$HOME/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/X11/bin:$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 # Applications/Postgres.app/Contents/MacOS/bin
 # http://stackoverflow.com/questions/19630154/gem-install-therubyracer-v-0-10-2-on-osx-mavericks-not-installing/19762877
 export CC=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/gcc-4.2
