@@ -53,8 +53,7 @@ export CLICOLOR=1;
 
 # export CURL_CA_BUNDLE=/usr/local/share/ca-bundle.crt
 # export CURL_CA_BUNDLE=/usr/local/Cellar/curl-ca-bundle/1.87/share/ca-bundle.crt
-export CURL_CA_BUNDLE=/usr/local/Cellar/curl-ca-bundle/1.87/share/cacert.pem
-
+#export CURL_CA_BUNDLE=/usr/local/Cellar/curl-ca-bundle/1.87/share/cacert.pem
 # export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/
 export CPPFLAGS=-I/opt/X11/include
@@ -63,7 +62,7 @@ export EDITOR='s'
 
 export SHELL=/bin/bash
 
-export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 # Finished adapting your PATH environment variable for use with MacPorts.
 export MANPATH=/opt/local/share/man:$MANPATH
@@ -203,19 +202,23 @@ function gh {
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 # Customize to your needs...
-export PATH=$PATH:$HOME/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/X11/bin:$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin
+export PATH=$PATH:$HOME/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/X11/bin:$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin
+# export PATH=$PATH:$HOME/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/X11/bin:$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+#export DYLD_LIBRARY_PATH: /usr/local/mysql/lib:/usr/local/mysql/lib:/usr/local/mysql/lib:
+
+
 # Applications/Postgres.app/Contents/MacOS/bin
 # http://stackoverflow.com/questions/19630154/gem-install-therubyracer-v-0-10-2-on-osx-mavericks-not-installing/19762877
-export CC=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/gcc-4.2
-export CXX=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/g++-4.2
-export CPP=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/cpp-4.2
+# export CC=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/gcc-4.2
+# export CXX=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/g++-4.2
+# export CPP=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/cpp-4.2
 #####
 
 # cert.pem file for openssl
-export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
+# export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
 # https://github.com/robbyrussell/oh-my-zsh/issues/1433#issuecomment-38358007
 bindkey "$terminfo[kcuu1]" history-substring-search-up

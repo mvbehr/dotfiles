@@ -4,6 +4,7 @@ echo "linking dotfiles to home directory"
 FILES="gemrc
 gitconfig
 irbrc
+oh-my-zsh
 my.cnf
 zshrc"
 
